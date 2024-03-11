@@ -1,3 +1,4 @@
+// ChatGpt assisted me in making this code
 document.getElementById("filters").addEventListener("submit", function (event) {
   event.preventDefault();
   var minCarYear = document.getElementById("minCarYear").value;
