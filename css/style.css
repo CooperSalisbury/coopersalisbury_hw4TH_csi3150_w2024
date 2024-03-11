@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+body {
+  background-color: blue;
+  align-items: center;
+  text-align: center;
+}
 form {
   margin-bottom: 20px;
 }
@@ -10,24 +21,49 @@ form {
   justify-content: space-between;
 }
 .car {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   text-align: center;
-  font-family: arial;
-  background-color: #f8f9fa;
-
+  background-color: black;
   max-height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
+  border-radius: 30px;
 }
 .car img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
-.container{
-    display: flex;
+.container {
+  display: flex;
 }
-.container>label {
-    margin-right: 10px;
+.container > label {
+  margin-right: 10px;
+}
+header {
+  color: white;
+  font-size: 32px;
+}
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}
+label {
+  color: white;
+}
+.car-details h1 {
+  color: white;
+}
+.car-details p {
+  color: white;
+}
+.container p {
+  padding-left: 550px;
+}
+h3 {
+  font-size: 14px;
+  color: white;
 }

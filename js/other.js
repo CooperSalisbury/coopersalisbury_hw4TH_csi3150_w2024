@@ -1,7 +1,7 @@
 document.getElementById("filters").addEventListener("submit", function (event) {
   event.preventDefault();
   var minCarYear = document.getElementById("minCarYear").value;
-  var maxCarYear = document.getElementById("maxcarYear").value;
+  var maxCarYear = document.getElementById("maxCarYear").value;
   var maxMile = document.getElementById("maxMile").value;
   var minCarPrice = document.getElementById("minCarPrice").value;
   var maxCarPrice = document.getElementById("maxCarPrice").value;
@@ -14,10 +14,10 @@ document.getElementById("filters").addEventListener("submit", function (event) {
     .filter((radio) => radio.checked)
     .map((radio) => radio.value);
   minCarYear = minCarYear ? parseInt(minCarYear) : 0;
-  maxCarYear = maxCarYear ? parseInt(maxCarYear) : 9999999999;
-  maxMile = maxMile ? parseInt(maxMile) : 9999999999;
+  maxCarYear = maxCarYear ? parseInt(maxCarYear) : Infinity;
+  maxMile = maxMile ? parseInt(maxMile) : Infinity;
   minCarPrice = minCarPrice ? parseInt(minCarPrice) : 0;
-  maxCarPrice = maxCarPrice ? parseInt(maxCarPrice) : 9999999999;
+  maxCarPrice = maxCarPrice ? parseInt(maxCarPrice) : Infinity;
   var filteredCars = usedCars.filter(function (car) {
     return (
       car.year >= minCarYear &&

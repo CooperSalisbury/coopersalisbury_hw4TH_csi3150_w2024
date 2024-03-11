@@ -14,7 +14,7 @@
         <div class="container">
           <p>Min Car Year:</p>
           <input type="number" id="minCarYear" name="minCarYear" />
-          <p>Max Car Year:</p>
+          <h3>Max Car Year:</h3>
           <input type="number" id="maxCarYear" name="maxCarYear" />
         </div>
         <div class="container">
@@ -42,13 +42,11 @@
             <label>
               <input type="radio" name="make" value="Subaru" />Subaru
             </label>
-            <br>
+            <br />
             <label>
               <input type="radio" name="make" value="Mazda" />Mazda
             </label>
-            <label> 
-                <input type="radio" name="make" value="Kia" />Kia 
-            </label>
+            <label> <input type="radio" name="make" value="Kia" />Kia </label>
             <label>
               <input type="radio" name="make" value="Dodge" />Dodge
             </label>
@@ -71,51 +69,49 @@
           </div>
         </div>
         <div class="container">
-            <p>Max Mileage:</p>
-            <input type="number" id="maxMile" name="maxMile">
+          <p>Max Mileage:</p>
+          <input type="number" id="maxMile" name="maxMile" />
         </div>
         <div class="container">
-            <p>Min Car Price:</p>
-            <input type="number" id="minCarPrice" name="minCarPrice" />
-            <p>Max Car price:</p>
-            <input type="number" id="maxCarPrice" name="maxCarPrice" />
+          <p>Min Car Price:</p>
+          <input type="number" id="minCarPrice" name="minCarPrice" />
+          <h3>Max Car price:</h3>
+          <input type="number" id="maxCarPrice" name="maxCarPrice" />
         </div>
         <div class="container">
-            <p>Color:</p>
-            <div id="color">
-                <label>
-                    <input type="radio" name="color" value="Red" />Red
-                </label>
-                <label>
-                    <input type="radio" name="color" value="Silver" />Silver
-                </label>
-                <label>
-                    <input type="radio" name="color" value="White" />White
-                </label>
-                <label>
-                    <input type="radio" name="color" value="Black" />Black
-                </label>
-                <label>
-                    <input type="radio" name="color" value="Blue" />Blue
-                </label>
-                <label>
-                    <input type="radio" name="color" value="Gray" />Gray
-                </label>
-                <label>
-                    <input type="radio" name="color" value="Green" />Green
-                </label>
-            </div>
+          <p>Color:</p>
+          <div id="color">
+            <label> <input type="radio" name="color" value="Red" />Red </label>
+            <label>
+              <input type="radio" name="color" value="Silver" />Silver
+            </label>
+            <label>
+              <input type="radio" name="color" value="White" />White
+            </label>
+            <label>
+              <input type="radio" name="color" value="Black" />Black
+            </label>
+            <label>
+              <input type="radio" name="color" value="Blue" />Blue
+            </label>
+            <label>
+              <input type="radio" name="color" value="Gray" />Gray
+            </label>
+            <label>
+              <input type="radio" name="color" value="Green" />Green
+            </label>
+          </div>
         </div>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
-    </form>
-        <h1>Avilabale Cars</h1>
-        <p id="noCars" style="display: none">No cars match your filter options. Try Again.</p>
-        <section id="carList">
-
-        </section>
-        <script src="./js/usedCars.js"></script>
-        <script src="./js/other.js"></script>
+      </form>
+      <h1>Avilabale Cars</h1>
+      <p id="noCars" style="display: none">
+        No cars match your filter options. Try Again.
+      </p>
+      <section id="carList"></section>
+      <script src="./js/usedCars.js"></script>
+      <script src="./js/other.js"></script>
     </main>
   </body>
 </html>
